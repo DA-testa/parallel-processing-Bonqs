@@ -10,9 +10,9 @@ def parallel_processing(num_threads, num_jobs, job_times):
     return output
 
 def main():
-    num_threads = int(input("Enter the number of threads: "))
-    num_jobs = int(input("Enter the number of jobs: "))
-    job_times = list(map(int, input("Enter the time for each job (in seconds): ").split()))
+    num_threads = int(input())
+    num_jobs = int(input())
+    job_times = list(map(int, input().split()))
 
     results = parallel_processing(num_threads, num_jobs, job_times)
 
